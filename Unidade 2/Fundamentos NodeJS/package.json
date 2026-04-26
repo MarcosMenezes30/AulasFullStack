@@ -1,0 +1,15 @@
+{
+  "name": "fundamentos-nodejs",
+  "version": "1.0.0",
+  "description": "Curso de NodeJS",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

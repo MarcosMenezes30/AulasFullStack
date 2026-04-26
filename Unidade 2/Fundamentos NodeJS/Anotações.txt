@@ -1,0 +1,61 @@
+O que é o NODE?
+
+    - Ambiente que permite a execução de código JavaScript fora de um navegador
+
+    - Utiliza V8 Engine (mesmo motor utilizado pelo Google Chrome)
+        -> Esse motor é responsável por transformar o código JavaScript em código de máquina e retorna o resultado pra gente
+
+    - Utilizado para construir APIs (back-ends)
+        -> Por exemplo, podemos criar uma API que faça um CRUD (create, read, update, delete) de usuários
+
+
+
+Como o NODE funciona internamente? 
+
+    - Possui apenas um núcleo para realizar as operações (single threaded)
+
+    - Suporta várias operações simultâneas (non-blovking) apesar de ser single threaded
+    
+    - O NODE funciona como um orquestrador de requisições, ou seja, ele que recebe as requisições e garante que elas aconteçam
+      uma de cada vez. A organização dessas requisições funciona como um formato de fila, ou seja, first in first out.
+
+
+
+Quais são as vantagens do NODE?
+
+    - Ótimo uso de memória (baito custo, uma vez que ele é single threaded)
+
+    - Harmonia com o front-end (ambos utilizam JavaScript)
+
+    - Muito rápido, simples e escalável
+
+    - Presença extremamente forte no mercado
+
+
+
+Módulos no NODE
+
+    - Podemos criar nossos próprios módulos (nossos arquivos) e imoportá-los
+
+    - O NODE.JS já vem com módulos pré-instalados (path, fs, http, etc)
+
+    - Para importar im módulo, utilizamos o CommonJS
+
+        const path = require('path');
+        const meuArquivo = require('./meu-arquivo.js')
+
+
+
+NPM - Node Package Manager
+
+    - Podemos instalar módulos de terceiros utilizando o NPM
+
+    - Quando esses módulos são instalados, ficam armazenados numa pasta chamada "node_modules"
+
+    - O arquivo chamado "package.json" lista todos os módulos que instalamos pelo NPM
+
+        -> npm init // Cria o package.json
+
+        -> npm install [NOME DO PACOTE] // Instala o pacote localmente naquele projeto
+        
+        -> npm -g install [NOME DO PACOTE] // Instala o pacote globalmente, logo, ao abrir outro projeto o pacote já estará instalado
