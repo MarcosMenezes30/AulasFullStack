@@ -15,10 +15,31 @@ No terminal:
 ```bash
 mysql -u root -h 127.0.0.1 -P 3306
 ```
+O que cada parte significa:
+```
+-> mysql: programa de terminal usado para conversar com o MySQL.
+
+-> -u root: conecta usando o usuário root, que é o usuário administrador do MySQL.
+
+-> -h 127.0.0.1: conecta no endereço 127.0.0.1, que significa “este próprio computador”, também chamado de localhost.
+
+-> -P 3306: conecta na porta 3306, que é a porta padrão do MySQL.
+```
 Se der certo, aparece algo como:
 ```
 mysql>
 ```
+A estrutura é assim
+```
+Seu Mac
+└── Servidor MySQL em 127.0.0.1:3306
+    ├── banco_a
+      ├── tabela_1
+      ├── tabela_2
+    ├── banco_b
+    ├── banco_c
+```
+
 
 ---
 
